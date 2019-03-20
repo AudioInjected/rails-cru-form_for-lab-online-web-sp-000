@@ -1,5 +1,6 @@
 class ArtistsController < ApplicationController
   def create
+    raise params.inspect
   end
 
   def show
