@@ -1,6 +1,6 @@
 <%= form_for @artist, artist_path(@artist) do |f| %>
-  f.text_field :name 
-  f.text_fiel :bio 
+  <%= f.text_field :name %>
+  <%= f.text_fiel :bio %>
   
-  f.submit "Create Artist"
+  <%= f.submit "Create Artist" %>
 <% end %>
