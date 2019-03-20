@@ -10,6 +10,8 @@ class ArtistsController < ApplicationController
   end
 
   def update
+    @artist = Artist.find(params[:id])
+    @artist.update(artist_params(:name, :bio))
   end
 
   def new
