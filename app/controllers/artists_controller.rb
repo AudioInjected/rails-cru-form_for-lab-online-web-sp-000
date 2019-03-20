@@ -3,7 +3,7 @@ class ArtistsController < ApplicationController
     @artist = Artist.new(artist_params(:name, :bio))
     @artist.save 
     
-    raise @artist.inspect
+    raise artist_path(@artist)
     redirect_to artist_path(@artist)
   end
 
