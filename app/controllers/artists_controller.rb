@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
   def create
-    raise params.inspect
+    @artist = Artist.new(params)
   end
 
   def show
@@ -15,4 +15,8 @@ class ArtistsController < ApplicationController
 
   def edit
   end
+  
+  private 
+  
+    def 
 end
