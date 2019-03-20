@@ -2,9 +2,15 @@ class SongsController < ApplicationController
   def create
   end
 
+  def show
+  end
+
   def update
   end
 
-  def show
+  def new
+  end
+
+  def edit
   end
 end
