@@ -1,5 +1,6 @@
 class GenresController < ApplicationController
   def create
+    
   end
 
   def show
@@ -14,4 +15,10 @@ class GenresController < ApplicationController
 
   def edit
   end
+  
+  private 
+  
+  def genre_params(*args)
+    params.require(:genre)
+  end 
 end
