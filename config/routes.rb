@@ -1,26 +1,5 @@
 Rails.application.routes.draw do
 
-
-  get 'songs/create'
-
-  get 'songs/show'
-
-  get 'songs/update'
-
-  get 'songs/new'
-
-  get 'songs/edit'
-
-  get 'genres/create'
-
-  get 'genres/show'
-
-  get 'genres/update'
-
-  get 'genres/new'
-
-  get 'genres/edit'
-
 resources :artists, only: [:create, :update, :show, :new, :edit]
 resources :genres, only: [:create, :update, :show, :new, :edit]
 resources :songs, only: [:create, :update, :show, :new, :edit]
