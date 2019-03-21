@@ -30,4 +30,8 @@ class SongsController < ApplicationController
   def song_params(*args) 
     params.require(:song).permit(*args)
   end 
+  
+  def index 
+    @songs = Song.all
+  end 
 end
