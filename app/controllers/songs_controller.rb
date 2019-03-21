@@ -25,14 +25,13 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
   end
   
+  def index 
+    @songs = Song.all
+  end 
+  
   private 
   
   def song_params(*args) 
     params.require(:song).permit(*args)
-  end 
-  
-  def index 
-    @songs = Song.all
-    binding.pry
   end 
 end
